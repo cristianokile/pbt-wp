@@ -1,0 +1,112 @@
+/*
+Theme Name: Piece Blank Theme
+Description: Estilização Principal do Tema
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ *  1.0 - Globals
+ *  2.0 - Font-sizes
+ *  3.0 - Colors
+ *  4.0 - Borders
+ *  5.0 - Backgrounds
+ *  6.0 - Header
+ *  7.0 - Footer
+ *  8.0 - Modules
+ *  9.0 - Plugins
+ * 10.0 - Hooks
+ * 11.0 - Media Queries
+ */
+
+
+/* 1.0 - GLOBALS */
+
+/* 2.0 - FONT-SIZES */
+
+/* 3.0 - COLORS */
+
+/* 4.0 - BORDERS */
+
+/* 5.0 - BACKGROUNDS */
+
+/* 6.0 - HEADER */
+
+/* 7.0 - FOOTER */
+
+/* 8.0 - MODULES */
+
+/* 9.0 - PLUGINS */
+
+/* 10.0 - HOOKS */
+
+/* 11.0 - MEDIA QUERIES */
+
+/* -- BETWEEN -- */
+
+/* XXS - Resolução de 0 até 480px */
+@media screen and (max-width: 480px){
+	
+}
+/* XS - Resolução de 481px até 768px */
+@media screen and (min-width: 481px) and (max-width: 768px){
+ 		   
+}
+/* SM - Resolução de 769px até 992px */
+@media screen and (min-width: 769px) and (max-width: 992px){
+	
+}
+/* MD - Resolução de 993px até 1200px */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	
+}
+/* LG - Resolução de 1201px até 1599px */
+@media screen and (min-width: 1201px) and (max-width: 1599){
+	
+}
+/* XL - Resolução acima de 1600px */
+@media screen and (min-width: 1600px){
+	
+}
+
+/* -- LESS THAN -- */
+
+/* XS - Resolução até 768px */
+@media screen and (max-width: 767px){
+	
+}
+/* SM - Resolução até 992px */
+@media screen and (max-width: 991px){
+	
+}
+/* MD - Resolução até 1200px */
+@media screen and (max-width: 1199px){
+    	
+}
+/* LG - Resolução até 1599px */
+@media screen and (max-width: 1599px){
+    
+}
+
+/* -- BIGGER THAN -- */
+/* XXS - Resolução a partir de 481px */
+@media screen and (min-width: 481px){
+	
+}
+/* XS - Resolução a partir de 769px */
+@media screen and (min-width: 769px){
+    
+}
+/* MD - Resolução a partir de 993px */
+@media screen and (min-width: 993px){
+	
+}
+/* LG - Resolução a partir de 1201px */
+@media screen and (min-width: 1201px){
+	 	
+}
+/* XL - Resolução a partir de 1599px */
+@media screen and (min-width: 1599px){
+    
+}

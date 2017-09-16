@@ -1,0 +1,24 @@
+/*
+Theme Name: PieceBlankTheme
+Author: Piece Digital
+Author URI: http://www.piecedigital.com.br
+Description: Layout desenvolvido por Piece Digital
+Version: 1.0
+*/
+
+@charset "UTF-8";
+
+/* Bootstrap */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css.map");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css.map");
+
+/* Fontes */
+@import url("assets/css/fonts.css");
+
+/* Estilos da Página */
+@import url("assets/css/main.css");
+
+/* Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
