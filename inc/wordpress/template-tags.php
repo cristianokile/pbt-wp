@@ -173,7 +173,7 @@ function pbt_wp_categorized_blog() {
 		$category_count = count( $categories );
 
 		set_transient( 'pbt_wp_categories', $category_count );
-	endif
+	endif;
 
 	// Permitir a visualização no de caso o 0 ou 1 categorias na pré-visualização.
 	if ( is_preview() ) :

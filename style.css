@@ -1,5 +1,5 @@
 /*
-Theme Name: PieceBlankTheme
+Theme Name: Piece Blank Theme
 Author: Piece Digital
 Author URI: http://www.piecedigital.com.br
 Description: Layout desenvolvido por Piece Digital
@@ -13,12 +13,13 @@ Version: 1.0
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css.map");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css.map");
+@import url("https://raw.githubusercontent.com/cristianokile/BootstrapXL/master/BootstrapXL.css");
 
 /* Fontes */
-@import url("assets/css/fonts.css");
+@import url("css/fonts.css");
 
 /* Estilos da Página */
-@import url("assets/css/main.css");
+@import url("css/main.css");
 
 /* Font Awesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");

@@ -12,10 +12,10 @@
 /**
  * SUPORTE A WP - Piece Blank Theme funciona somente a partir do WordPress versão 4.7
  */
-if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
+if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) :
 	require get_template_directory() . '/inc/back-compat.php';
 	return;
-}
+endif;
 
 /**
  * Definição dos padrões do tema e registro do suporte para vários recursos do WordPress.
@@ -383,11 +383,6 @@ function pbt_wp_scripts() {
 	// Folha de estilo do tema
 	wp_enqueue_style( 'pbt_wp-style', get_stylesheet_uri() );
 
-	// Carrega o esquema de cores Dark
-	if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {
-		wp_enqueue_style( 'pbt_wp-colors-dark', get_theme_file_uri( '/assets/css/colors-dark.css' ), array( 'pbt_wp-style' ), '1.0' );
-	}
-
 	// Carrega os estilos específicos para o Internet Explorar 9, para corrigir problemas de exibição na customização
 	if ( is_customize_preview() ) {
 		wp_enqueue_style( 'pbt_wp-ie9', get_theme_file_uri( '/assets/css/ie9.css' ), array( 'pbt_wp-style' ), '1.0' );
@@ -399,26 +394,22 @@ function pbt_wp_scripts() {
 	wp_style_add_data( 'pbt_wp-ie8', 'conditional', 'lt IE 9' );
 
 	// Carrega o HTML6 Shiv
-	wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '3.7.3' );
+	wp_enqueue_script( 'html5', get_theme_file_uri( '/js/wordpress/html5.js' ), array(), '3.7.3' );
 	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
-	wp_enqueue_script( 'pbt_wp-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
-	$pbt_wp_l10n = array(
-		'quote'          => pbt_wp_get_svg( array( 'icon' => 'quote-right' ) ),
-	);
+	wp_enqueue_script( 'pbt_wp-skip-link-focus-fix', get_theme_file_uri( '/js/wordpress/skip-link-focus-fix.js' ), array(), '1.0', true );
 	if ( has_nav_menu( 'top' ) ) {
-		wp_enqueue_script( 'pbt_wp-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'pbt_wp-navigation', get_theme_file_uri( '/js/wordpress/navigation.js' ), array( 'jquery' ), '1.0', true );
 		$pbt_wp_l10n['expand']         = __( 'Expand child menu', 'pbt_wp' );
 		$pbt_wp_l10n['collapse']       = __( 'Collapse child menu', 'pbt_wp' );
-		$pbt_wp_l10n['icon']           = pbt_wp_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
 	}
 
 
 	// ADIÇÃO DE SCRIPTS
 	
 	// jQUERY 1.0
-	wp_enqueue_script( 'pbt_wp-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'pbt_wp-global', get_theme_file_uri( '/js/wordpress/global.js' ), array( 'jquery' ), '1.0', true );
 	// ScrollTo
-	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/js/wordpress/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
 	wp_localize_script( 'pbt_wp-skip-link-focus-fix', 'pbt_wpScreenReaderText', $pbt_wp_l10n );
 
@@ -516,10 +507,10 @@ add_filter( 'frontpage_template',  'pbt_wp_front_page_template' );
  * CUSTOM HEADER
  * Implementar o recurso de Custom Header.
  */
-require get_parent_theme_file_path( '/inc/custom-header.php' );
+require get_parent_theme_file_path( '/inc/wordpress/custom-header.php' );
 
 /**
  * TEMPLATE TAGS CUSTOM
  * Template de tags customizados para teste tema
  */
-require get_parent_theme_file_path( '/inc/template-tags.php' );
+require get_parent_theme_file_path( '/inc/wordpress/template-tags.php' );

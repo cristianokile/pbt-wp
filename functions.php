@@ -12,5 +12,5 @@
 	// Padrão
 	require_once('inc/wordpress/functions-default.php');
 	// Customizado
-	require_once('inc/wordpress/functions-custom.php');
+	require_once('inc/functions-custom.php');
  ?>

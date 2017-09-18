@@ -31,7 +31,7 @@
 	    	endif;   
 	  	endif;
 	  	return $template;
-	}
+	};
 
 	function amp_seo() {
 		if( is_single() ): ?>
@@ -40,4 +40,3 @@
 	}?>
 	<?php add_action('wp_head', 'amp_seo');?>
 
-?>

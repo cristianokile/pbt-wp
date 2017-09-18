@@ -37,9 +37,9 @@
 		<meta name="theme-color" content="#994688">
 		
 		<!-- Styles -->
-		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link rel="pingback" href="index.php">
+		<link rel="pingback" href="<?php echo get_site_url(); ?>">
 
 		<!-- Scripts Principais -->
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -48,7 +48,7 @@
 	    <?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
 		
 		<!-- CABEÇALHO -->
 		<div class="container header">
